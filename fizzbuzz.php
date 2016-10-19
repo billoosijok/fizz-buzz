@@ -2,10 +2,9 @@
 
 for( $n = 1; $n <= 100; $n ++ )
 {
-    $output = '';
-
     if ( $n % 3 == 0 ) $output = 'Fizz';
-    if ( $n % 5 == 0 ) $output .= 'Buzz';
+    elseif ( $n % 5 == 0 ) $output = 'Buzz';
+    else $output = $n
 
-    echo ( empty( $output ) ) ? $n : $output, '<br>';
+    echo $output, '<br>';
 }
